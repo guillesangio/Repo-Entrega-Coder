@@ -26,40 +26,20 @@ html{
 
  
 /* Navegador*/
-#mainNav nav{
-	background-color: black;
-	width: 100%;
-	height: auto;
-	justify-content: space-between;
-	align-items: center;
-	display: flex;
+nav img{
+	width: 180px;
+	height: 120px;
+	padding-top: 0;
 }
-
-	nav img{
-		width: 200px;
-		height: 150px;
-		float: left;
-		padding-top: 0;
-}
-
 
 body{
 	background-color: black;
 }
-	nav ul{
-		list-style: none;
-		text-decoration: none;
-		font-family: 'Shadows Into Light', cursive;
-		display: flex;
-		float: right;
-	}
-		nav ul li{
-			display: inline-block;
-			list-style: none;
-			margin-right: 60px;
-			padding-top: 60px;
-		}
-		
+
+	nav ul li{
+		margin-right: 60px;
+}
+	
 			nav ul li a{
 				color: white; 	
 				text-decoration: none;
@@ -67,11 +47,24 @@ body{
 				font-family: 'Shadows Into Light', cursive;
 				display: inline-block;
 				font-size: 2rem;
-			}
+}
 
-			nav ul li a:hover{
-				color: red;
-			}
+.nav-link{
+	font-size: 2rem;
+	font-family: 'Shadows Into Light', cursive;
+	color: white;
+	background-color: black;
+	padding-bottom: 10px;
+}
+
+.nav-link:hover{
+	color: red;
+}
+
+.bg-black{
+	background-color: black;
+	width: 100vw;
+}
 
 p{
 	color: black;
@@ -125,7 +118,7 @@ header p {
 
 
 main img{
-	width: 40%;
+	width: 48vw;
 	height: 80vh;
 	padding: 20px;
 }
@@ -142,10 +135,7 @@ main img{
 	padding-left: 5rem;
 }
 
-.imgheader{
-	width: 100%;
-	height: 100vh;
-}
+
 
 .compra_img{
 	width: 100%;
@@ -208,7 +198,16 @@ section p{
 	margin-bottom: 30px;
 	margin-top: 30px;
 }
+.container{
+	margin: 0;
+	padding: 0;
+}
 
+
+.caruselfoto{
+	height: 90vh;
+	width: 100vw;
+}
 #leyenda_productos h2{
 	text-align: center;
 	color: grey;
@@ -345,8 +344,9 @@ section p{
 	text-align: center;
 }
 
-.text-left{
+ul{
 	text-align: left;
+	padding-left: 0
 }
 
 .text-right{
@@ -403,7 +403,7 @@ section p{
 	width: 50px;
 	height: 50px;
 	margin-top: 40%;
-	margin-left: 50px;
+	margin-left: 35px;
 }
 
 .pie-pagina .logo_footer .redes-pedido img{
@@ -431,11 +431,7 @@ section p{
 	margin-top: 250px;
 }
 
-.imgheaderd{
-		height: 600px;	
-		width: 100%;
-		background-color: black;
-}		
+	
 
 .imgmenu{
 	width: 500px;
@@ -537,6 +533,15 @@ main div figure p{
 	display: flex;
 }
 
+.imgheaderd{
+	width: 100vw;
+	height: 80vh;
+}
+
+.imgheader{
+	width: 100vw;
+}
+
 #nosotros img{
 	height: 500px;
 	width: 600px;
@@ -617,11 +622,15 @@ main div figure p{
 
 .formu_motivos{
     display: inline-block;
-    width: 102%;
+    width: 100%;
     height: 50px;
     font-size: 1rem;
     border-radius: 0.6rem;
     margin: 15px 0;
+}
+
+.navbar-toggler{
+	background-color: white;
 }
 
 .formu_2{
@@ -654,10 +663,6 @@ main div figure p{
 #header p{
 	font-size: 1.8rem;
 	top: 12rem;
-}
-
-.imgheader{
-	height: 50vh;
 }
 
 .boton_menu {
@@ -694,15 +699,11 @@ video{
 	height: 50vh;
 }
 
-
-.imgheader{
-	height: 50vh;
-} 
-
 .titulonosotros {
 	position: initial;
 	padding-top: 20px;
 }
+
 
 #nosotros {
 	display: block;
@@ -779,9 +780,6 @@ main div figure figcaption{
 	font-size: 1rem;
 }
 
-.imgheaderd {
-	height: 50vh;
-}
 
 #filtros h2{
 	font-size: 2rem;
@@ -883,25 +881,21 @@ main div figure figcaption{
 	margin: 0;
 }
 
-.imgheader {
-	height: 50vh;
-}
+
 #productosdegaleria p{
 	margin: 0 10% 0 10%;
 }
 }
 
 @media (max-width: 1024px){
-.imgheader{
-	height: 60vh;
-}
+
 
 header p{
 	top: 12rem;
 }
 
 main img{
-	height: 40vh;
+	height: 70vh;
 }
 
 .compra_img{
@@ -1012,12 +1006,9 @@ main div figure figcaption{
 	line-height: 1rem;
 }
 
-.imgheaderd {
-	height: 45vh;
-}
+
 
 nav ul li {
-	margin: 0;
 	font-size: 1.5rem;
 	text-align: center;
 }
@@ -1080,7 +1071,7 @@ nav ul li a {
 
 #productosdegaleria img {
 	width: 100%;
-	height: 27vh;
+	height: 45vh;
 }
 
 }
